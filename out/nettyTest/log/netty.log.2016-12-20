@@ -1,0 +1,1991 @@
+[DEBUG] [2016-12-20 08:55:53,866] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 08:55:53,869] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 08:55:53,888] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 08:55:53,888] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 08:55:53,921] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 08:55:58,930] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 601 (auto-detected)
+[DEBUG] [2016-12-20 08:55:58,933] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xab6e3ab17e9fc7b1
+[DEBUG] [2016-12-20 08:55:58,942] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 08:55:59,026] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 08:55:59,026] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 08:55:59,026] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 08:55:59,028] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 08:55:59,029] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 08:55:59,029] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 08:55:59,029] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 08:55:59,029] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 08:55:59,030] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 08:55:59,030] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 08:55:59,031] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 08:55:59,031] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 08:55:59,031] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 08:55:59,041] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 08:55:59,041] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 08:55:59,041] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 08:55:59,041] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 09:00:33,339] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 09:00:33,347] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message 11 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 09:03:17,010] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[1,2,2,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 09:03:58,038] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 09:03:58,040] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 09:03:58,057] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 09:03:58,057] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 09:03:58,087] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 09:04:03,093] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 619 (auto-detected)
+[DEBUG] [2016-12-20 09:04:03,096] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xad48dea6e766f9fc
+[DEBUG] [2016-12-20 09:04:03,106] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 09:04:03,206] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 09:04:03,207] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 09:04:03,207] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 09:04:03,208] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 09:04:03,209] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 09:04:03,209] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 09:04:03,209] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 09:04:03,209] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 09:04:03,209] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 09:04:03,210] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 09:04:03,211] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 09:04:03,211] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 09:04:03,211] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 09:04:03,215] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 09:04:03,215] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 09:04:03,215] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 09:04:03,215] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 09:04:05,703] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 09:04:05,712] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[1,2,2,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:01:57,962] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:01:57,969] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:01:57,986] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:01:57,986] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:01:58,016] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:02:03,023] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 848 (auto-detected)
+[DEBUG] [2016-12-20 10:02:03,027] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x71c3556e27bd3b31
+[DEBUG] [2016-12-20 10:02:03,036] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:02:03,138] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:02:03,138] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:02:03,138] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:02:03,142] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:02:03,142] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:02:03,142] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:02:03,143] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:02:03,143] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:02:03,143] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:02:03,144] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:02:03,144] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:02:03,144] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:02:03,144] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:02:03,149] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:02:03,150] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:02:03,150] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:02:03,150] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:02:05,643] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:02:05,656] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[1,2,2,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:03:35,159] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:03:35,161] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:03:35,176] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:03:35,176] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:03:35,209] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:03:40,215] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 860 (auto-detected)
+[DEBUG] [2016-12-20 10:03:40,219] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xeb72029fdcc98be4
+[DEBUG] [2016-12-20 10:03:40,230] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:03:40,359] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:03:40,359] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:03:40,359] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:03:40,360] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:03:40,361] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:03:40,361] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:03:40,361] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:03:40,361] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:03:40,361] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:03:40,362] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:03:40,362] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:03:40,362] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:03:40,362] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:03:40,366] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:03:40,366] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:03:40,367] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:03:40,367] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:03:43,557] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:03:43,567] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[1,2,2,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:05:02,245] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[1,2,2,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:05:52,403] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params��:[91,76,106,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:05:59,543] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[91,76,106,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:06:49,422] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[91,76,106,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:07:43,453] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:07:43,456] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:07:43,470] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:07:43,471] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:07:43,502] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:07:48,511] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 883 (auto-detected)
+[DEBUG] [2016-12-20 10:07:48,515] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x0f41b1f81aea0694
+[DEBUG] [2016-12-20 10:07:48,522] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:07:48,609] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:07:48,609] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:07:48,609] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:07:48,610] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:07:48,611] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:07:48,611] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:07:48,611] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:07:48,611] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:07:48,611] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:07:48,612] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:07:48,612] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:07:48,612] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:07:48,612] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:07:48,616] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:07:48,616] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:07:48,616] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:07:48,616] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:07:51,172] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:07:51,183] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[91,76,106,3,3,3,3,3,3,3]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:08:40,847] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params��:[-1,-3,-2,-2,50,-2,-2,-2,-2,-2]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:08:49,584] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-1,-3,-2,-2,50,-2,-2,-2,-2,-2]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:09:31,343] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:09:31,345] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:09:31,360] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:09:31,360] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:09:31,391] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:09:36,398] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 896 (auto-detected)
+[DEBUG] [2016-12-20 10:09:36,401] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x6fbeef1a56467332
+[DEBUG] [2016-12-20 10:09:36,409] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:09:36,504] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:09:36,504] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:09:36,504] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:09:36,505] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:09:36,505] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:09:36,506] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:09:36,506] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:09:36,506] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:09:36,506] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:09:36,507] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:09:36,508] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:09:36,508] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:09:36,508] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:09:36,512] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:09:36,512] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:09:36,512] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:09:36,512] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:09:40,754] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:09:40,764] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-1,-3,-2,-2,50,-2,-2,-2,-2,-2]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:14:47,105] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params��:[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:14:55,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:17:10,311] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:17:10,315] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:17:10,339] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:17:10,339] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:17:10,390] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:17:15,396] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 913 (auto-detected)
+[DEBUG] [2016-12-20 10:17:15,399] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x361bddd0b6645ded
+[DEBUG] [2016-12-20 10:17:15,407] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:17:15,527] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:17:15,527] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:17:15,527] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:17:15,529] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:17:15,529] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:17:15,529] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:17:15,529] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:17:15,530] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:17:15,530] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:17:15,530] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:17:15,531] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:17:15,531] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:17:15,531] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:17:15,536] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:17:15,536] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:17:15,536] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:17:15,536] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:17:21,961] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:17:22,256] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:57:22,299] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:57:22,301] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:57:22,316] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:57:22,316] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:57:22,352] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:57:27,362] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1181 (auto-detected)
+[DEBUG] [2016-12-20 10:57:27,366] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xf5989077735f7a54
+[DEBUG] [2016-12-20 10:57:27,381] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:57:27,470] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:57:27,471] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:57:27,471] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:57:27,472] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:57:27,472] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:57:27,472] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:57:27,472] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:57:27,472] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:57:27,473] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:57:27,473] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:57:27,473] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:57:27,473] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:57:27,473] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:57:27,476] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:57:27,477] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:57:27,477] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:57:27,477] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 10:57:33,662] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 10:57:33,900] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 10:58:07,246] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 10:58:07,249] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 10:58:07,265] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 10:58:07,265] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 10:58:07,295] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 10:58:12,302] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1190 (auto-detected)
+[DEBUG] [2016-12-20 10:58:12,306] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xa74e20d5298b0348
+[DEBUG] [2016-12-20 10:58:12,318] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 10:58:12,449] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 10:58:12,449] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 10:58:12,449] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 10:58:12,451] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 10:58:12,451] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 10:58:12,451] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 10:58:12,452] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 10:58:12,452] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 10:58:12,452] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 10:58:12,452] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 10:58:12,454] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 10:58:12,454] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 10:58:12,454] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 10:58:12,458] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 10:58:12,459] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 10:58:12,459] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 10:58:12,459] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:08:32,875] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:08:32,878] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:08:32,898] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:08:32,898] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:08:32,933] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:08:37,941] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1395 (auto-detected)
+[DEBUG] [2016-12-20 16:08:37,945] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xfffddbfaa5ff8949
+[DEBUG] [2016-12-20 16:08:37,955] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:08:38,053] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:08:38,053] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:08:38,053] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:08:38,056] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:08:38,056] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:08:38,056] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:08:38,056] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:08:38,056] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:08:38,057] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:08:38,057] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:08:38,057] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:08:38,057] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:08:38,058] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:08:38,062] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:08:38,062] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:08:38,062] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:08:38,063] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:08:56,274] [pool-2-thread-1] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:08:56,321] [pool-2-thread-1] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:08:56,409] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:08:56,410] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:08:56,465] [pool-2-thread-1] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:09:01,481] [pool-2-thread-1] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1398 (auto-detected)
+[DEBUG] [2016-12-20 16:09:01,495] [pool-2-thread-1] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xd1e480132bc92fd5
+[DEBUG] [2016-12-20 16:09:01,502] [pool-2-thread-1] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:09:01,588] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:09:01,588] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:09:01,588] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:09:01,589] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:09:01,590] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:09:01,591] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:09:01,591] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:09:01,591] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[INFO ] [2016-12-20 16:09:01,632] [nioEventLoopGroup-2-1] [com.celient.ClientInitHandler] HelloClientIntHandler.channelActive
+[DEBUG] [2016-12-20 16:09:02,069] [nioEventLoopGroup-2-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:09:02,080] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:09:02,423] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {"from":"fading","state":0,"to":"server","msgType":1,"cmd":44,"params":[45,50,32]} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:09:03,086] [nioEventLoopGroup-2-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {"from":"server","msgType":1,"to":"hardware","flag":0,"errCode":0} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:11:16,276] [pool-2-thread-1] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:11:16,286] [pool-2-thread-1] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:11:16,321] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:11:16,321] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:11:16,368] [pool-2-thread-1] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:11:21,384] [pool-2-thread-1] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1407 (auto-detected)
+[DEBUG] [2016-12-20 16:11:21,398] [pool-2-thread-1] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x9cf4842d19e863db
+[DEBUG] [2016-12-20 16:11:21,405] [pool-2-thread-1] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:11:21,486] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:11:21,487] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:11:21,487] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:11:21,488] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:11:21,488] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:11:21,489] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:11:21,489] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:11:21,489] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:11:21,489] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:11:21,489] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:11:21,490] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:11:21,490] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:11:21,490] [pool-2-thread-1] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[INFO ] [2016-12-20 16:11:21,525] [nioEventLoopGroup-2-1] [com.celient.ClientInitHandler] HelloClientIntHandler.channelActive
+[DEBUG] [2016-12-20 16:11:21,561] [nioEventLoopGroup-2-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:11:21,566] [nioEventLoopGroup-3-2] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message -2  that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:11:22,576] [nioEventLoopGroup-2-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {"from":"server","msgType":1,"to":"hardware","flag":0,"errCode":0} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:13:34,279] [pool-2-thread-1] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:13:34,283] [pool-2-thread-1] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:13:34,304] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:13:34,304] [pool-2-thread-1] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:13:34,380] [pool-2-thread-1] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:13:46,466] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:13:46,468] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:13:46,497] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:13:46,497] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:13:46,542] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:13:51,548] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1416 (auto-detected)
+[DEBUG] [2016-12-20 16:13:51,552] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x363beb07b788bc53
+[DEBUG] [2016-12-20 16:13:51,559] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:13:51,655] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:13:51,655] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:13:51,655] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:13:51,656] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:13:51,656] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:13:51,656] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:13:51,657] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:13:51,657] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:13:51,657] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:13:51,657] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:13:51,658] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:13:51,658] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:13:51,658] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:13:51,663] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:13:51,663] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:13:51,663] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:13:51,663] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:13:54,242] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:13:54,548] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:17:52,034] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:17:52,036] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:17:52,051] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:17:52,051] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:17:52,082] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:17:57,091] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1434 (auto-detected)
+[DEBUG] [2016-12-20 16:17:57,095] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xa5cdd35d8c547688
+[DEBUG] [2016-12-20 16:17:57,104] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:17:57,211] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:17:57,211] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:17:57,211] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:17:57,212] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:17:57,213] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:17:57,213] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:17:57,213] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:17:57,214] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:17:57,214] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:17:57,214] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:17:57,215] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:17:57,215] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:17:57,215] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:17:57,218] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:17:57,218] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:17:57,219] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:17:57,219] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:17:59,553] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:17:59,891] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:24:57,870] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:24:57,874] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:24:57,888] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:24:57,888] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:24:57,917] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:25:02,923] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1452 (auto-detected)
+[DEBUG] [2016-12-20 16:25:02,927] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x1c102821273d4d8b
+[DEBUG] [2016-12-20 16:25:02,935] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:25:03,042] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:25:03,043] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:25:03,043] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:25:03,045] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:25:03,045] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:25:03,045] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:25:03,045] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:25:03,046] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:25:03,046] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:25:03,046] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:25:03,047] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:25:03,047] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:25:03,047] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:25:03,052] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:25:03,052] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:25:03,053] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:25:03,053] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:25:09,003] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:25:09,299] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:30,561] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:25:30,563] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:25:30,579] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:25:30,579] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:25:30,619] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:25:35,623] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1459 (auto-detected)
+[DEBUG] [2016-12-20 16:25:35,626] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x69e171bee2cc3317
+[DEBUG] [2016-12-20 16:25:35,633] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:25:35,718] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:25:35,719] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:25:35,719] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:25:35,720] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:25:35,720] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:25:35,720] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:25:35,721] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:25:35,721] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:25:35,721] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:25:35,721] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:25:35,722] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:25:35,722] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:25:35,722] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:25:35,729] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:25:35,729] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:25:35,729] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:25:35,729] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:25:39,389] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:25:39,655] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:51,429] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:52,428] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:53,429] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:54,429] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:55,427] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:56,427] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:25:57,429] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:02,782] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:02,882] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:02,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,183] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,383] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,486] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,581] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,783] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,882] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:03,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,181] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,482] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,583] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,784] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,883] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:04,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,182] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,384] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,484] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,583] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,701] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,783] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,883] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:05,984] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,081] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,181] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,483] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,582] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,782] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,893] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:06,983] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,182] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,484] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,583] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,682] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,782] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,883] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:07,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,085] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,183] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,384] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,483] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,583] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,684] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,783] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,883] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:08,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,082] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,181] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,285] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,483] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,582] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,783] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,886] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:09,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,083] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,181] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,393] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,481] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,581] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,781] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,882] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:10,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,083] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,183] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,282] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,383] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,482] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,582] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,681] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,782] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,881] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:11,983] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,097] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,182] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,285] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,482] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,582] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,683] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,781] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,881] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:12,982] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,081] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,187] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,285] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,382] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,482] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,583] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,682] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,790] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,883] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:13,981] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:26:14,083] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:12,596] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:33:12,599] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:33:12,614] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:33:12,614] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:33:12,649] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:33:17,657] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1471 (auto-detected)
+[DEBUG] [2016-12-20 16:33:17,661] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x38c9f9e6413290a9
+[DEBUG] [2016-12-20 16:33:17,668] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:33:17,759] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:33:17,759] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:33:17,759] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:33:17,760] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:33:17,761] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:33:17,761] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:33:17,761] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:33:17,761] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:33:17,761] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:33:17,762] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:33:17,762] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:33:17,762] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:33:17,762] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:33:17,766] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:33:17,766] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:33:17,766] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:33:17,766] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:33:20,173] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:33:20,441] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:39,455] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:33:39,457] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:33:39,472] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:33:39,472] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:33:39,502] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:33:44,509] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1479 (auto-detected)
+[DEBUG] [2016-12-20 16:33:44,513] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x332410ab19b3dabf
+[DEBUG] [2016-12-20 16:33:44,520] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:33:44,605] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:33:44,606] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:33:44,606] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:33:44,607] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:33:44,607] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:33:44,607] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:33:44,607] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:33:44,608] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:33:44,608] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:33:44,608] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:33:44,609] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:33:44,609] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:33:44,609] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:33:44,612] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:33:44,613] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:33:44,613] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:33:44,613] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:33:49,956] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:33:50,183] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,194] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,293] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,402] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,499] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,594] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,697] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,795] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,894] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:52,998] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,093] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,194] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,307] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,395] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,494] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,608] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,694] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,800] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,895] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:53,995] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,094] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,195] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,294] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,397] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,499] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,595] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,694] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,796] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,894] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:54,994] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,096] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,193] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,295] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,396] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,493] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,593] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,695] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,795] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,894] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:55,995] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,094] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,197] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,296] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,393] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,493] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,605] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,693] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,798] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,894] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:56,994] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,095] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,194] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,294] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,398] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,499] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,594] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,695] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,800] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,894] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:57,994] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:58,106] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:58,194] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:58,294] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:33:58,395] [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline] Discarded inbound message {
+  "from": "fadinglan",
+  "to": "server",
+  "msgType": 1,
+  "cmd": 44,
+  "params":[-2,-2,-2,-2,50,-2,-2,-3,-3,-1]
+} that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] [2016-12-20 16:51:09,489] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:51:09,492] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:51:09,507] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:51:09,507] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:51:09,536] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:51:14,540] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1579 (auto-detected)
+[DEBUG] [2016-12-20 16:51:14,543] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x34db96b3526c54c9
+[DEBUG] [2016-12-20 16:51:14,552] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:51:14,645] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:51:14,645] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:51:14,645] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:51:14,646] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:51:14,646] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:51:14,646] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:51:14,647] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:51:14,647] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:51:14,647] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:51:14,647] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:51:14,648] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:51:14,648] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:51:14,648] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:51:14,652] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:51:14,653] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:51:14,653] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:51:14,653] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:51:17,510] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:53:49,469] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:53:49,472] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:53:49,487] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:53:49,487] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:53:49,518] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:53:54,525] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1586 (auto-detected)
+[DEBUG] [2016-12-20 16:53:54,529] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0xa5ac637e0dfb8879
+[DEBUG] [2016-12-20 16:53:54,536] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:53:54,629] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:53:54,629] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:53:54,629] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:53:54,631] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:53:54,631] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:53:54,631] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:53:54,631] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:53:54,632] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:53:54,632] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:53:54,632] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:53:54,633] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:53:54,633] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:53:54,633] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:53:54,638] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:53:54,639] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:53:54,639] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:53:54,639] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:53:57,140] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple
+[DEBUG] [2016-12-20 16:57:03,527] [main] [io.netty.util.internal.logging.InternalLoggerFactory] Using Log4J as the default logging framework
+[DEBUG] [2016-12-20 16:57:03,530] [main] [io.netty.channel.MultithreadEventLoopGroup] -Dio.netty.eventLoopThreads: 8
+[DEBUG] [2016-12-20 16:57:03,545] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.noKeySetOptimization: false
+[DEBUG] [2016-12-20 16:57:03,545] [main] [io.netty.channel.nio.NioEventLoop] -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] [2016-12-20 16:57:03,575] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.machineId: a0:99:9b:1c:b7:7b:00:00 (auto-detected)
+[DEBUG] [2016-12-20 16:57:08,579] [main] [io.netty.channel.DefaultChannelId] -Dio.netty.processId: 1604 (auto-detected)
+[DEBUG] [2016-12-20 16:57:08,582] [main] [io.netty.util.internal.ThreadLocalRandom] -Dio.netty.initialSeedUniquifier: 0x0521dfb15939fca1
+[DEBUG] [2016-12-20 16:57:08,592] [main] [io.netty.channel.ChannelOutboundBuffer] -Dio.netty.threadLocalDirectBufferSize: 65536
+[DEBUG] [2016-12-20 16:57:08,710] [main] [io.netty.util.internal.PlatformDependent] UID: 501
+[DEBUG] [2016-12-20 16:57:08,710] [main] [io.netty.util.internal.PlatformDependent] Java version: 8
+[DEBUG] [2016-12-20 16:57:08,710] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noUnsafe: false
+[DEBUG] [2016-12-20 16:57:08,711] [main] [io.netty.util.internal.PlatformDependent0] java.nio.ByteBuffer.cleaner: available
+[DEBUG] [2016-12-20 16:57:08,711] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Buffer.address: available
+[DEBUG] [2016-12-20 16:57:08,712] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.theUnsafe: available
+[DEBUG] [2016-12-20 16:57:08,712] [main] [io.netty.util.internal.PlatformDependent0] sun.misc.Unsafe.copyMemory: available
+[DEBUG] [2016-12-20 16:57:08,712] [main] [io.netty.util.internal.PlatformDependent0] java.nio.Bits.unaligned: true
+[DEBUG] [2016-12-20 16:57:08,712] [main] [io.netty.util.internal.PlatformDependent] sun.misc.Unsafe: available
+[DEBUG] [2016-12-20 16:57:08,713] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noJavassist: false
+[DEBUG] [2016-12-20 16:57:08,714] [main] [io.netty.util.internal.PlatformDependent] Javassist: unavailable
+[DEBUG] [2016-12-20 16:57:08,714] [main] [io.netty.util.internal.PlatformDependent] You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[DEBUG] [2016-12-20 16:57:08,714] [main] [io.netty.util.internal.PlatformDependent] -Dio.netty.noPreferDirect: false
+[DEBUG] [2016-12-20 16:57:08,719] [main] [io.netty.util.NetUtil] Loopback interface: lo0
+[DEBUG] [2016-12-20 16:57:08,719] [main] [io.netty.util.NetUtil] Loopback address: /fe80:0:0:0:0:0:0:1%lo0 (primary)
+[DEBUG] [2016-12-20 16:57:08,719] [main] [io.netty.util.NetUtil] Loopback address: /0:0:0:0:0:0:0:1
+[DEBUG] [2016-12-20 16:57:08,720] [main] [io.netty.util.NetUtil] Loopback address: /127.0.0.1
+[DEBUG] [2016-12-20 16:57:11,734] [nioEventLoopGroup-3-1] [io.netty.util.ResourceLeakDetector] -Dio.netty.leakDetectionLevel: simple

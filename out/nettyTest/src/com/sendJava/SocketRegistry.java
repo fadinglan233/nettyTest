@@ -31,7 +31,6 @@ public class SocketRegistry {
     }
 
     public static void register(final String name, final Channel channel) {
-
         if (SocketMemCache.contains("Tmp_" + channel.id())) {
             SocketMemCache.del("Tmp_" + channel.id());
         }

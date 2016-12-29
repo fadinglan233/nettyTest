@@ -33,12 +33,7 @@ import java.util.List;
 
         public void channelActive(ChannelHandlerContext ctx) throws Exception {
 
-//        //通知已经连接至客户端
-            String re = "connect successful";
-            System.out.print(re);
-//            ByteBuf byteBuf = Unpooled.buffer(re.getBytes().length);
-//            byteBuf.writeBytes(re.getBytes());
-//            ctx.writeAndFlush(byteBuf);
+            SocketRegistry.register("Tmp_" + ctx.channel().id(), ctx.channel());
 
         }
         @Override

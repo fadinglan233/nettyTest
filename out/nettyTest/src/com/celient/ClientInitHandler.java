@@ -6,8 +6,8 @@ package com.celient;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.protocol.Templates.SendMessage;
 import com.protocol.Templates.SocketProtocol;
-import com.protocol.Templates.rePlay;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
@@ -18,13 +18,12 @@ import org.apache.commons.logging.LogFactory;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ClientInitHandler extends ChannelInboundHandlerAdapter {
     private static Log logger = LogFactory.getLog(ClientInitHandler.class);
     private ByteBuf message;
     private int deviceNum;
+    private static final int win = 10;
 
     public ClientInitHandler(int num) {
         super();
@@ -41,53 +40,46 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter {
 
 
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelActive(final ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
         logger.info("HelloClientIntHandler.channelActive");
         final ArrayList<String> arrayList = dataIn();
 //		ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         new Runnable() {
-            String reqStr = null;
+            Double[] params = new Double[win];
             byte[] req = null;
+            String [] range = null;
 
             @Override
             public void run() {
+                SendMessage protocol = new SendMessage();
+                protocol.setFrom(String.valueOf(deviceNum));
+                protocol.setTo("server");
+                protocol.setMsgType(1);
                 // TODO Auto-generated method stub
-//                for (int j = 1; j < arrayList.size(); j++) {
-//                    System.out.println("arrayList.size():" + arrayList.size());
-//                    if (j == 1) {
-//                        reqStr = "{[237,252][" + deviceNum
-//                                + "][2][ 2016-3-29 12:36:21]["
-//                                + arrayList.get(j)
-//                                + "][20][10][0.000000][10]}236,239";
-//                    } else if (j == arrayList.size() - 1) {
-//                        reqStr = "{[237,252][" + deviceNum
-//                                + "][2][ 2016-3-29 12:36:21]["
-//                                + arrayList.get(j)
-//                                + "][20][4][0.000000][10]}236,239";
-//                    } else {
-//                        reqStr = "{[237,252][" + deviceNum
-//                                + "][2][ 2016-3-29 12:36:21]["
-//                                + arrayList.get(j)
-//                                + "][20][2][0.000000][10]}236,239";
-//                    }
-//                    req = reqStr.getBytes();
-                for(int j = 0; j < 10; j++) {
-                    reqStr = arrayList.get(j) + " ";
-                    req = reqStr.getBytes();
-                }
 
-                    SocketProtocol protocol = new SocketProtocol();
-                    JSONObject json;
+                for(int i = 1; i < arrayList.size()/win; i += win) {
+
+                    for(int j = 0; j < 10; j++) {
+                       params[j] = Double.parseDouble(arrayList.get(i+j));
+                    }
+
+                    protocol.setParams(params);
+                    if (i == 1){
+                        protocol.setCmd(44);//起始标志
+                    }else if (i == arrayList.size() - 1){
+                        protocol.setCmd(40);//结束标识
+                    }else {
+                        protocol.setCmd(42);
+                    }
+
+
 
 //                    String params = JSON.toJSONString(req.toString());
 
 
 //                    JSONArray pa = JSON.parseArray(params);
-                    protocol.setFrom("fading");
-                    protocol.setTo("server");
-                    protocol.setMsgType(1);
-                    protocol.setCmd(44);
+
 //                    protocol.setParams(pa);
 
                     JSONObject Rejson = (JSONObject) JSON.toJSON(protocol);
@@ -95,15 +87,13 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter {
                     ByteBuf byteBuf = Unpooled.copiedBuffer(reString.getBytes());
                     ctx.writeAndFlush(byteBuf);
                     ctx.flush();
-
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
 
-
-
+                }
             }
         }.run();
     }

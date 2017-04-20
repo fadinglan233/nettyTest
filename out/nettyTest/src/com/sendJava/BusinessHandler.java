@@ -17,7 +17,6 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
     public class BusinessHandler extends ChannelHandlerAdapter {
 
         public void channelActive(ChannelHandlerContext ctx) throws Exception {
-
             SocketRegistry.register("Tmp_" + ctx.channel().id(), ctx.channel());
 
         }

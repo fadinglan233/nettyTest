@@ -2,6 +2,7 @@ package com.sendJava;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
 import com.db.DBPool;
 import com.db.SleepDataSave;
@@ -31,8 +32,6 @@ public class SocketServer {
     private static ArrayList<SocketProtocol> sleepDataListClone = new ArrayList<>();
     private static ArrayList<SocketProtocol> sleepDataList = new ArrayList<>();
 
-//    private static Map<String, String> sleepDataMap = new HashMap<>();
-
     /**
      * 提交一个数据到框架
      *
@@ -41,20 +40,32 @@ public class SocketServer {
      */
     public static void submit(ChannelHandlerContext ctx, String packet) {
 
-//        System.out.print(packet);
-
         JSONObject json;
-        json = JSON.parseObject(packet);
+        try {
+            json = JSON.parseObject(packet);
+            if (json.get("msgType").equals(0))
+                replyHeartbeat(ctx.channel());
 
-        if (json.get("msgType").equals(0))
-            replyHeartbeat(ctx.channel());
+            else {
+                Integer cmd = json.getInteger("cmd");
+                switch (cmd){
+                    case 64:
+                        rePlay reRegister = new rePlay("server","hardware",1,1);
+                        sendMsg(ctx.channel(),reRegister);
+                        break;
+                    case 32:
+                        SocketProtocol sleepData = saveSleepData(json);
+                        sleepDataHandle(sleepData);
+                        break;
+                    default:break;
+                }
 
-        else {
-            SocketProtocol sleepData = saveSleepData(json);
-            sleepDataHandle(sleepData);
+            }
+        }catch (JSONException e){
+            System.out.println("传入消息JSON格式错误");
+            e.printStackTrace();
 
         }
-
 
     }
 

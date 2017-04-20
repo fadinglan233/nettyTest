@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76cd7475-e23d-4c6f-8690-3fb2a6cf0e02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/commons-dbcp2-2.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/commons-pool2-2.4.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/Client$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/Client$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/Client.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/TestData.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/db/DBPool.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/protocol/Templates/SendMessage.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/protocol/Templates/SocketProtocol.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/protocol/Templates/rePlay.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/BusinessHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/Server.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketMemCache.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketRegistry$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketRegistry.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketRegistryItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketRegistryUserItem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketServer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/netty.log.2016-12-22" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/netty.log.2016-12-26" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/netty.log.2016-12-28" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/netty.log.2016-12-29" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/netty.log.2017-03-29" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/dbcpconfig.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/nettyTest/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/db/SleepDataSave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/SleepData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/BusinessHandler.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/BusinessHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketServer.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/netty.log" afterPath="$PROJECT_DIR$/log/netty.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/celient/Client.java" afterPath="$PROJECT_DIR$/src/com/celient/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/celient/ClientInitHandler.java" afterPath="$PROJECT_DIR$/src/com/celient/ClientInitHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/celient/TestData.java" afterPath="$PROJECT_DIR$/src/com/celient/TestData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/protocol/Templates/SendMessage.java" afterPath="$PROJECT_DIR$/src/com/protocol/Templates/SendMessage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" afterPath="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sendJava/Server.java" afterPath="$PROJECT_DIR$/src/com/sendJava/Server.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" afterPath="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" />
     </list>
     <ignored path="nettyTest.iws" />
@@ -88,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocketServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SocketHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
+            <state relative-caret-position="164">
+              <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -123,15 +98,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BusinessHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="179">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#897#898#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,16 +150,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientInitHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/celient/ClientInitHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="81" column="47" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -262,11 +227,11 @@
         <option value="$PROJECT_DIR$/src/com/db/sleepDataSave.java" />
         <option value="$PROJECT_DIR$/src/com/celient/Client.java" />
         <option value="$PROJECT_DIR$/src/com/db/SleepDataSave.java" />
-        <option value="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketRegistry.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketRegistryUserItem.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketRegistryItem.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" />
       </list>
     </option>
   </component>
@@ -969,8 +934,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Client" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Server" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Client" />
         <item index="2" class="java.lang.String" itemvalue="Application.NettyServerBootstrap" />
         <item index="3" class="java.lang.String" itemvalue="Application.NettyServer" />
       </list>
@@ -1051,7 +1016,7 @@
       <workItem from="1492569263976" duration="4839000" />
       <workItem from="1492656460944" duration="861000" />
       <workItem from="1492657381276" duration="185000" />
-      <workItem from="1492657800387" duration="18672000" />
+      <workItem from="1492657800387" duration="19365000" />
     </task>
     <task id="LOCAL-00001" summary="register list">
       <created>1482388185511</created>
@@ -1067,11 +1032,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482994997541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成睡眠数据处理存储">
+      <created>1492689768403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1492689768403</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224067000" />
+    <option name="totallyTimeSpent" value="224760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1168,7 +1140,8 @@
     <MESSAGE value="commit 1" />
     <MESSAGE value="register list" />
     <MESSAGE value="client -- server" />
-    <option name="LAST_COMMIT_MESSAGE" value="client -- server" />
+    <MESSAGE value="完成睡眠数据处理存储" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成睡眠数据处理存储" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,14 +1242,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/celient/SleepData.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/protocol/Templates/SendMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
@@ -1356,22 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sendJava/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketMemCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1409,13 +1358,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="28" column="55" lean-forward="false" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="179">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sendJava/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

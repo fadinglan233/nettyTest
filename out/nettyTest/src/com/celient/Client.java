@@ -55,7 +55,7 @@ public class Client {
             @Override
             public void run() {
                 // TODO Auto-generated method stub
-                for(int i = 30; i < 31; i++){
+                for(int i = 35; i < 41; i++){
                     int tempnum = i;
                     executor.submit(new TestData(tempnum));
 

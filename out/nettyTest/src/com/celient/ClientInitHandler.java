@@ -44,11 +44,11 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(final ChannelHandlerContext ctx) throws Exception {
         super.channelActive(ctx);
-        logger.info("HelloClientIntHandler.channelActive");
+//        logger.info("HelloClientIntHandler.channelActive");
         final ArrayList<String> arrayList = dataIn("sleep");
-        System.out.println("sleep data : " + arrayList.size());
-        final ArrayList<String> moveList = dataIn("move");
-        System.out.println("move data : " + moveList.size());
+//        System.out.println("sleep data : " + arrayList.size());
+//        final ArrayList<String> moveList = dataIn("move");
+//        System.out.println("move data : " + moveList.size());
 //		ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         new Runnable() {
             @Override
@@ -65,29 +65,29 @@ public class ClientInitHandler extends ChannelInboundHandlerAdapter {
                 int count = 0;
                 for(int i = 1; i < arrayList.size()/win; i += win) {
 
-                    count ++;
-                    if (count % moveWin == 0){
-                        SendMessage move = new SendMessage();
-                        move.setFrom(String.valueOf(deviceNum));
-                        move.setTo("server");
-                        move.setMsgType(1);
-                        Double[] moveData= new Double[win];
+//                    count ++;
+//                    if (count % moveWin == 0){
+//                        SendMessage move = new SendMessage();
+//                        move.setFrom(String.valueOf(deviceNum));
+//                        move.setTo("server");
+//                        move.setMsgType(1);
+//                        Double[] moveData= new Double[win];
+//
+//                        int start = (count / moveWin * 10 < moveList.size()) ? count / moveWin * 10 : moveList.size() - 1;
+//
+//                        if (start == moveList.size() - 1) count = 0;
+//                        for (int k = 0; k < 10; k ++){
+//                            moveData[k] = Double.parseDouble(moveList.get(start - 10 + k));
+//                        }
+//                        move.setParams(moveData);
+//                        move.setCmd(45);
+//                        JSONObject moveJson = (JSONObject) JSON.toJSON(move);
+//                        String reString = moveJson.toJSONString();
+//                        ByteBuf byteBuf = Unpooled.copiedBuffer(reString.getBytes());
+//                        ctx.writeAndFlush(byteBuf);
+//
 
-                        int start = (count / moveWin * 10 < moveList.size()) ? count / moveWin * 10 : moveList.size() - 1;
-
-                        if (start == moveList.size() - 1) count = 0;
-                        for (int k = 0; k < 10; k ++){
-                            moveData[k] = Double.parseDouble(moveList.get(start - 10 + k));
-                        }
-                        move.setParams(moveData);
-                        move.setCmd(45);
-                        JSONObject moveJson = (JSONObject) JSON.toJSON(move);
-                        String reString = moveJson.toJSONString();
-                        ByteBuf byteBuf = Unpooled.copiedBuffer(reString.getBytes());
-                        ctx.writeAndFlush(byteBuf);
-
-
-                    }
+//                    }
 
                     for(int j = 0; j < 10; j++) {
                         params[j] = Double.parseDouble(arrayList.get(i+j));

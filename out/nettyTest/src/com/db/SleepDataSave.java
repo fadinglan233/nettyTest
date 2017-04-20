@@ -42,9 +42,9 @@ public class SleepDataSave {
             Object[] ob =  sp.getParams().toArray();
             String heartRate = "";
             for (Object o:ob) {
-                heartRate = heartRate + " " + o;
+                heartRate = heartRate + o + " ";
             }
-            sleepData.setHeartRate(sleepData.getHeartRate() + " " + heartRate);
+            sleepData.setHeartRate(sleepData.getHeartRate() + heartRate);
         }
         SleepData sleepDataQuery = queryDB(sleepData.getDeviceId(), con);
 
@@ -54,7 +54,7 @@ public class SleepDataSave {
             sleepData.setStartTime(startTime);
             saveSleepData(sleepData, con);
         }else {
-            sleepData.setHeartRate(sleepData.getHeartRate() + " " + sleepDataQuery.getHeartRate());
+            sleepData.setHeartRate(sleepData.getHeartRate() + sleepDataQuery.getHeartRate());
             updateSleepData(sleepData, con);
 
         }

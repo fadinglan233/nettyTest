@@ -19,39 +19,51 @@ import java.sql.Connection;
  */
 public class Server {
 
-    public void start(int port) throws Exception {
-        EventLoopGroup bossGroup = new NioEventLoopGroup();
-        EventLoopGroup workerGroup = new NioEventLoopGroup();
+    public void bind(int port) throws Exception{
+        EventLoopGroup boosGroup = new NioEventLoopGroup();
+        EventLoopGroup workGroup = new NioEventLoopGroup();
+
         try {
             ServerBootstrap b = new ServerBootstrap();
-            b.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
-                    .childHandler(new ChannelInitializer<SocketChannel>() {
-                        @Override
-                        public void initChannel(SocketChannel ch) throws Exception {
-                            //解码
-//                            ByteBuf delimiter = Unpooled.copiedBuffer("236".getBytes());
-//                            ch.pipeline().addLast(new DelimiterBasedFrameDecoder(1024, delimiter));
-                            ch.pipeline().addLast(new StringDecoder());
-                            //业务处理
-                            ch.pipeline().addLast(new BusinessHandler());
-
-                        }
-                    }).option(ChannelOption.SO_BACKLOG, 1024)
-                    .childOption(ChannelOption.SO_KEEPALIVE, true);
+            b.group(boosGroup, workGroup)
+                    .channel(NioServerSocketChannel.class)
+                    .option(ChannelOption.SO_BACKLOG, 1024)
+                    .option(ChannelOption.TCP_NODELAY, true)
+                    .childOption(ChannelOption.SO_KEEPALIVE, true)
+                    .childHandler(new ChildChannelHandler());
 
             ChannelFuture f = b.bind(port).sync();
-
             f.channel().closeFuture().sync();
-        } finally {
-            workerGroup.shutdownGracefully();
-            bossGroup.shutdownGracefully();
+        }finally {
+            boosGroup.shutdownGracefully();
+            workGroup.shutdownGracefully();
         }
     }
 
+    class ChildChannelHandler extends ChannelInitializer<SocketChannel>{
+
+        @Override
+        protected void initChannel(SocketChannel socketChannel) throws Exception {
+            socketChannel.pipeline().addLast(new StringDecoder());
+            socketChannel.pipeline().addLast(new BusinessHandler());
+
+        }
+    }
+
+
     public static void main(String[] args) throws Exception {
+        int port = 8000;
         Connection con = DBPool.getConnection();
-        Server server = new Server();
-        server.start(8000);
+        if (args != null && args.length > 0){
+            try {
+                port = Integer.valueOf(args[0]);
+            }catch (NumberFormatException e){
+
+            }
+        }
+
+        new Server().bind(port);
+
     }
 }
 

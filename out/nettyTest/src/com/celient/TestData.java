@@ -17,7 +17,7 @@ public class TestData extends Thread{
         // TODO Auto-generated method stub
         super.run();
         try {
-            new Client().connect("127.0.0.1",8000 , tempnum);
+            new Client().connect("192.168.1.127",8000 , tempnum);
 
         } catch (Exception e) {
             // TODO Auto-generated catch block

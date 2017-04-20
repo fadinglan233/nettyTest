@@ -20,14 +20,14 @@ public class SendMessage implements Serializable{
 
         private Integer cmd = null;
 
-        private Double[] params = null;
+        private Object[] params = null;
 
 
         public SendMessage() {
 
         }
 
-        public SendMessage(String from, String to, Integer msgType, Integer cmd, Double[] params ) {
+        public SendMessage(String from, String to, Integer msgType, Integer cmd, Object[] params ) {
             this.from = from;
             this.to = to;
             this.msgType = msgType;
@@ -75,11 +75,11 @@ public class SendMessage implements Serializable{
             this.cmd = cmd;
         }
 
-        public Double[] getParams() {
+        public Object[] getParams() {
             return params;
         }
 
-        public void setParams(Double[] params) {
+        public void setParams(Object[] params) {
             this.params = params;
         }
 

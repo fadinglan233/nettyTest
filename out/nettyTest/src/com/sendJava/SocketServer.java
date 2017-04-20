@@ -4,11 +4,13 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.db.DBPool;
+import com.db.SleepDataSave;
 import com.protocol.Templates.SocketProtocol;
 import com.protocol.Templates.rePlay;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
+import model.SleepData;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,8 +28,10 @@ public class SocketServer {
     private SocketProtocol sleepdata_real = new SocketProtocol();
     private SocketProtocol sleepdata_cache = new SocketProtocol();
 
-    private static String heartStr = new String();
+    private static ArrayList<SocketProtocol> sleepDataListClone = new ArrayList<>();
+    private static ArrayList<SocketProtocol> sleepDataList = new ArrayList<>();
 
+//    private static Map<String, String> sleepDataMap = new HashMap<>();
 
     /**
      * 提交一个数据到框架
@@ -37,6 +41,7 @@ public class SocketServer {
      */
     public static void submit(ChannelHandlerContext ctx, String packet) {
 
+//        System.out.print(packet);
 
         JSONObject json;
         json = JSON.parseObject(packet);
@@ -45,16 +50,12 @@ public class SocketServer {
             replyHeartbeat(ctx.channel());
 
         else {
-            if (json.getString("params").contains("deviceType")) {
-                rePlay reRegister = new rePlay("server","hardware",1,1);
-                sendMsg(ctx.channel(),reRegister);
+            SocketProtocol sleepData = saveSleepData(json);
+            sleepDataHandle(sleepData);
 
-            }else {
-                SocketProtocol sleepData = saveSleepData(json);
-                sleepDataHandle(sleepData);
-
-            }
         }
+
+
     }
 
 
@@ -67,34 +68,29 @@ public class SocketServer {
         protocol.setFrom((String) json.get("from"));
         protocol.setParams((JSONArray) json.get("params"));
 
+        sleepDataList.add(protocol);
         return protocol;
 
     }
 
     public static void sleepDataHandle(SocketProtocol protocol){
-        Object[] data = protocol.getParams().toArray();
-        String deviceId = protocol.getFrom();
-        String heart = "";
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        String startTime = df.format(new Date());
 
-        if (heartStr == null || heartStr.isEmpty()) {
-            heartStr = heartStr + heart;
-        }
-        else {
-            heartStr = heartStr + heart;
+        System.out.println(protocol.getFrom() + "Thread" + Thread.currentThread().getName() + "ing====");
+
+        String from = protocol.getFrom();
+        String data = protocol.getParams().toJSONString();
+
+//        sleepDataMap.put(from, data);
+
+        if (sleepDataList.size() == 15){
+            sleepDataListClone =  (ArrayList<SocketProtocol>) sleepDataList.clone();
+            sleepDataList.clear();
+            SleepDataSave.insertInDB(sleepDataListClone);
+
         }
 
-        for(Object s : data){
-            heartStr += s + " ";
-        }
-        Map<String,String> fullStr = new HashMap<>();
-        fullStr.put("heartRate",heartStr);
-        fullStr.put("startTime",startTime);
-        saveAlarmData(deviceId,fullStr);
 
     }
-
 
     /**
      * 发送数据
@@ -108,7 +104,6 @@ public class SocketServer {
         writeAndFlush(ctx, data);
 
     }
-
 
     // 回复心跳包
     private static void replyHeartbeat (Channel ctx){
@@ -128,212 +123,6 @@ public class SocketServer {
     }
 
 
-    public static String convertToString (SocketProtocol protocol){
-
-        return JSON.toJSONString(protocol);
-
-    }
-
-    public void save_real(SocketProtocol protocol){
-        sleepdata_real.setParams(protocol.getParams());
-        sleepdata_real.setFrom(protocol.getFrom());
-    }
-
-
-    public SocketProtocol saveToCache(String body) {
-
-        JSONObject json;
-        json = JSON.parseObject(body);
-        SocketProtocol protocol = new SocketProtocol();
-        protocol.setParams((JSONArray) json.get("params"));
-        protocol.setCmd((int) json.get("cmd"));
-        protocol.setMsgType((int) json.get("msgType"));
-        protocol.setTo((String) json.get("to"));
-        protocol.setTo((String) json.get("from"));
-        return protocol;
-
-    }
-
-
-    /**
-     *
-     * @param fullKey
-     * @param fullMap
-     */
-    public  static void saveAlarmData(String fullKey,Map fullMap){
-        System.out.println("saveAlarmData");
-        Connection con = DBPool.getConnection();
-        try {
-            con.setAutoCommit(false);
-        } catch (SQLException e2) {
-            e2.printStackTrace();
-        }
-        if(query(fullKey,con)){
-            update(fullKey,fullMap,con);
-
-        }else{
-            save(fullKey,fullMap,con);
-        }
-
-    }
-
-
-    /**
-     *
-     * @param fullKey
-     * @param con
-     * @return
-     * @throws NumberFormatException
-     */
-    public  static boolean query(String fullKey, Connection con) throws NumberFormatException {
-        String querysql = "select * from sleep_data where deviceId = " + fullKey + "";
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-
-        try {
-            ps = con.prepareStatement(querysql);
-            rs = ps.executeQuery();
-            con.commit();
-            if(rs.next()) {
-                return true;
-            }
-        } catch (SQLException e) {
-            try {
-                System.out.println("查询数据库异常。。。");
-                con.rollback();
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            e.printStackTrace();
-        } finally {
-            // 关闭存储查询结果的ResultSet对象
-            if (rs != null) {
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            }
-            // 关闭负责执行SQL命令的prepareStatement对象
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-            }
-        }
-        return false;
-    }
-
-
-
-    /**
-     *
-     * @param fullKey
-     * @param fullMap
-     * @param con
-     * @throws NumberFormatException
-     */
-    private static void save(String fullKey, Map fullMap, Connection con) throws NumberFormatException {
-        PreparedStatement ps = null;
-        String save_sql = "insert into sleep_data (deviceId,heartRate,startTime) values(?,?,?)";
-        try {
-            ps = con.prepareStatement(save_sql);
-
-            ps.setLong(1, Long.valueOf(fullKey));
-
-            ps.setString(2, fullMap.get("heartRate").toString());
-            ps.setString(3, fullMap.get("startTime").toString());
-
-            ps.executeUpdate();
-
-            con.commit();
-
-        } catch (SQLException e) {
-            try {
-                System.out.println("插入数据库异常，正在进行回滚..");
-                con.rollback();
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            e.printStackTrace();
-        } finally {
-            // 关闭负责执行SQL命令的prepareStatement对象
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-            }
-            // 将Connection连接对象还给数据库连接池
-            if (con != null ) {
-                try {
-                    con.close();
-                } catch (Exception e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-            }
-
-        }
-    }
-
-    /**
-     *
-     * @param fullKey
-     * @param fullMap
-     * @param con
-     */
-    private static void update(String fullKey,Map fullMap, Connection con) {
-
-        String update_sql ="update sleep_data set heartRate='"+fullMap.get("heartRate").toString()+"',moveFlag='"+1+"'"+" where deviceId='"+fullKey+"'";
-        PreparedStatement ps = null;
-        try {
-            ps = con.prepareStatement(update_sql);
-            ps.executeUpdate();
-            con.commit();
-
-        } catch (SQLException e) {
-            try {
-                System.out.println("插入数据库异常，正在进行回滚..");
-                con.rollback();
-            } catch (SQLException e1) {
-                e1.printStackTrace();
-            }
-            e.printStackTrace();
-        } finally {
-
-            // 关闭负责执行SQL命令的prepareStatement对象
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-            }
-            // 将Connection连接对象还给数据库连接池
-            if (con != null ) {
-                try {
-                    con.close();
-                } catch (Exception e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-            }
-
-        }
-
-    }
 
 
 

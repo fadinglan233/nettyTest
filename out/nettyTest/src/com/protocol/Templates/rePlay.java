@@ -12,7 +12,9 @@ public class rePlay {
     private Integer MsgType = null;
     private Integer errCode = null;
 
+    public rePlay(){
 
+    }
 
     public rePlay (String from, String to, Integer MsgType,  Integer flag) {
         this.from = from;

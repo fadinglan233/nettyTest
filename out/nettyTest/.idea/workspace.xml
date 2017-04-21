@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76cd7475-e23d-4c6f-8690-3fb2a6cf0e02" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/SocketServer.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/celient/Client$2.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/Client$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/BusinessHandler.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/sendJava/BusinessHandler.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/db/DeviceRegister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler$1.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler.class" afterPath="$PROJECT_DIR$/out/production/nettyTest/com/celient/ClientInitHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/netty.log" afterPath="$PROJECT_DIR$/log/netty.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/celient/Client.java" afterPath="$PROJECT_DIR$/src/com/celient/Client.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/celient/ClientInitHandler.java" afterPath="$PROJECT_DIR$/src/com/celient/ClientInitHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/db/SleepDataSave.java" afterPath="$PROJECT_DIR$/src/com/db/SleepDataSave.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java" afterPath="$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" afterPath="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" afterPath="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" />
     </list>
     <ignored path="nettyTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +46,7 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sendJava/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
+            <state relative-caret-position="214">
               <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding />
             </state>
@@ -60,18 +56,8 @@
       <file leaf-file-name="SocketServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="540">
               <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,7 +66,7 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/celient/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="585">
               <caret line="52" column="46" lean-forward="false" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
               <folding />
             </state>
@@ -90,18 +76,18 @@
       <file leaf-file-name="ClientInitHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/celient/ClientInitHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+            <state relative-caret-position="600">
+              <caret line="55" column="50" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SleepDataSave.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SleepDataSave.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/db/SleepDataSave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+            <state relative-caret-position="-113">
+              <caret line="53" column="46" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="53" selection-end-column="46" />
               <folding>
                 <marker date="1492698709000" expanded="true" signature="1898:1958" ph="select * fro... sleep_data" />
                 <marker date="1492698709000" expanded="true" signature="3251:3316" ph="insert into sleep_data... " />
@@ -121,22 +107,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/celient/TestData.java">
+      <file leaf-file-name="BusinessHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="477">
+              <caret line="52" column="70" lean-forward="false" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
+      <file leaf-file-name="rePlay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="121" column="17" lean-forward="true" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding>
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/db/DeviceRegister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1492737581000" expanded="true" signature="813:869" ph="select * fro... device" />
+                <marker date="1492737581000" expanded="true" signature="1917:1966" ph="insert into device... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +147,7 @@
       <file leaf-file-name="SocketRegistry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="405">
               <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="50" />
               <folding />
             </state>
@@ -182,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/model/MsgType.java" />
         <option value="$PROJECT_DIR$/src/com/model/LoginMsg.java" />
         <option value="$PROJECT_DIR$/src/com/model/PingMsg.java" />
         <option value="$PROJECT_DIR$/src/com/model/AskMsg.java" />
@@ -214,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/com/celient/PersonEncoder.java" />
         <option value="$PROJECT_DIR$/src/com/db/DBPool.java" />
         <option value="$PROJECT_DIR$/src/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketMemCache.java" />
         <option value="$PROJECT_DIR$/src/dbcpconfig.properties" />
         <option value="$PROJECT_DIR$/src/com/protocol/Templates/SocketProtocol.java" />
@@ -230,9 +231,11 @@
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketRegistryItem.java" />
         <option value="$PROJECT_DIR$/src/com/celient/Client.java" />
         <option value="$PROJECT_DIR$/src/com/celient/ClientInitHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sendJava/SocketServer.java" />
         <option value="$PROJECT_DIR$/src/com/db/SleepDataSave.java" />
+        <option value="$PROJECT_DIR$/src/com/db/DeviceRegister.java" />
+        <option value="$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java" />
+        <option value="$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java" />
       </list>
     </option>
   </component>
@@ -243,10 +246,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1440" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -264,6 +266,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -357,6 +362,10 @@
               <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -404,9 +413,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1006,7 +1012,8 @@
       <workItem from="1492657800387" duration="21070000" />
       <workItem from="1492692361263" duration="567000" />
       <workItem from="1492693064919" duration="1148000" />
-      <workItem from="1492695226514" duration="3795000" />
+      <workItem from="1492695226514" duration="3824000" />
+      <workItem from="1492735455549" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="register list">
       <created>1482388185511</created>
@@ -1036,11 +1043,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492690630619</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完善上传异常BUG">
+      <created>1492699050500</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1492699050500</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231975000" />
+    <option name="totallyTimeSpent" value="234361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1052,25 +1066,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1440" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11013216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2613803" sideWeight="0.50646204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2611465" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2611465" sideWeight="0.49353796" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2041116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2074392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21082391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1082,6 +1095,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11013216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1139,7 +1153,8 @@
     <MESSAGE value="client -- server" />
     <MESSAGE value="完成睡眠数据处理存储" />
     <MESSAGE value="添加异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加异常处理" />
+    <MESSAGE value="完善上传异常BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善上传异常BUG" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1152,7 +1167,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/model/returnMsg.java" />
     <entry file="file://$PROJECT_DIR$/src/com/model/ReplyClientBody.java" />
     <entry file="file://$PROJECT_DIR$/src/com/model/PingMsg.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/PersonDecoder.java" />
@@ -1264,35 +1278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#552#553#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#624#625#0" expanded="false" />
-            <element signature="e#653#654#0" expanded="false" />
-            <element signature="e#678#679#0" expanded="false" />
-            <element signature="e#714#715#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#807#808#0" expanded="false" />
-            <element signature="e#854#855#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-            <element signature="e#919#920#0" expanded="false" />
-            <element signature="e#946#947#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1019#1020#0" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-            <element signature="e#1084#1085#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-            <element signature="e#1169#1170#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketRegistryItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1335,24 +1320,65 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
+        <state relative-caret-position="6315">
           <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#54151#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6252#6253#0" expanded="false" />
+            <element signature="e#6320#6321#0" expanded="false" />
+            <element signature="e#10189#10190#0" expanded="false" />
+            <element signature="e#10216#10217#0" expanded="false" />
+            <element signature="e#10398#10399#0" expanded="false" />
+            <element signature="e#10430#10431#0" expanded="false" />
+            <element signature="e#10907#10908#0" expanded="false" />
+            <element signature="e#10945#10946#0" expanded="false" />
+            <element signature="e#13541#13542#0" expanded="false" />
+            <element signature="e#13596#13597#0" expanded="false" />
+            <element signature="e#15414#15415#0" expanded="false" />
+            <element signature="e#15459#15460#0" expanded="false" />
+            <element signature="e#24549#24550#0" expanded="false" />
+            <element signature="e#24603#24604#0" expanded="false" />
+            <element signature="e#30347#30348#0" expanded="false" />
+            <element signature="e#30384#30385#0" expanded="false" />
+            <element signature="e#30684#30685#0" expanded="false" />
+            <element signature="e#30716#30717#0" expanded="false" />
+            <element signature="e#31041#31042#0" expanded="false" />
+            <element signature="e#31086#31087#0" expanded="false" />
+            <element signature="e#33262#33263#0" expanded="false" />
+            <element signature="e#33304#33305#0" expanded="false" />
+            <element signature="e#33338#33339#0" expanded="false" />
+            <element signature="e#33375#33376#0" expanded="false" />
+            <element signature="e#33413#33414#0" expanded="false" />
+            <element signature="e#33454#33455#0" expanded="false" />
+            <element signature="e#38943#38944#0" expanded="false" />
+            <element signature="e#38994#38995#0" expanded="false" />
+            <element signature="e#39436#39437#0" expanded="false" />
+            <element signature="e#39481#39482#0" expanded="false" />
+            <element signature="e#39886#39887#0" expanded="false" />
+            <element signature="e#39960#39961#0" expanded="false" />
+            <element signature="e#40600#40601#0" expanded="false" />
+            <element signature="e#40658#40659#0" expanded="false" />
+            <element signature="e#42227#42228#0" expanded="false" />
+            <element signature="e#42280#42281#0" expanded="false" />
+            <element signature="e#42326#42327#0" expanded="false" />
+            <element signature="e#42383#42384#0" expanded="false" />
+            <element signature="e#44775#44776#0" expanded="false" />
+            <element signature="e#44842#44843#0" expanded="false" />
+            <element signature="e#46390#46391#0" expanded="false" />
+            <element signature="e#46455#46456#0" expanded="false" />
+            <element signature="e#51499#51500#0" expanded="false" />
+            <element signature="e#51557#51558#0" expanded="false" />
+            <element signature="e#51597#51598#0" expanded="false" />
+            <element signature="e#51690#51691#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="405">
           <caret line="32" column="50" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sendJava/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1367,7 +1393,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/celient/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="585">
           <caret line="52" column="46" lean-forward="false" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
           <folding />
         </state>
@@ -1375,37 +1401,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/celient/ClientInitHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="55" column="50" lean-forward="true" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+        <state relative-caret-position="600">
+          <caret line="55" column="50" lean-forward="false" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sendJava/SocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="540">
           <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sendJava/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="121" column="17" lean-forward="true" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+        <state relative-caret-position="214">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/db/SleepDataSave.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="73" lean-forward="false" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+        <state relative-caret-position="-113">
+          <caret line="53" column="46" lean-forward="true" selection-start-line="51" selection-start-column="11" selection-end-line="53" selection-end-column="46" />
           <folding>
             <marker date="1492698709000" expanded="true" signature="1898:1958" ph="select * fro... sleep_data" />
             <marker date="1492698709000" expanded="true" signature="3251:3316" ph="insert into sleep_data... " />
             <marker date="1492698709000" expanded="true" signature="4436:4498" ph="update sleep... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/db/DeviceRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1492737581000" expanded="true" signature="813:869" ph="select * fro... device" />
+            <marker date="1492737581000" expanded="true" signature="1917:1966" ph="insert into device... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/protocol/Templates/rePlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sendJava/BusinessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="52" column="70" lean-forward="false" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

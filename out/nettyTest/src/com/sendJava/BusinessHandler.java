@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
+import com.db.DeviceRegister;
 import com.db.SleepDataSave;
 import com.protocol.Templates.SocketProtocol;
 import com.protocol.Templates.rePlay;
@@ -47,8 +48,9 @@ import java.util.ArrayList;
                             Integer cmd = json.getInteger("cmd");
                             switch (cmd){
                                 case 64:
-                                    rePlay reRegister = new rePlay("server","hardware",1,1);
-                                    sendMsg(ctx.channel(),reRegister);
+//                                    rePlay reRegister = new rePlay("server","hardware",1,1);
+//                                    sendMsg(ctx.channel(),reRegister);
+                                    deviceRegister(ctx.channel(), json);
                                     break;
                                 case 32:
                                     SocketProtocol sleepData = saveSleepData(json);
@@ -103,6 +105,30 @@ import java.util.ArrayList;
         }
 
 
+    }
+
+
+
+
+    public void deviceRegister(Channel ctx, JSONObject json){
+        try {
+            String deviceId = (String) json.get("from");
+            rePlay reRegister = new rePlay();
+            reRegister.setFrom((String)json.get("to"));
+            reRegister.setTo((String)json.get("from"));
+            reRegister.setMsgType(1);
+            if (DeviceRegister.registerDevice(deviceId)){
+                reRegister.setFlag(1);
+
+            }else {
+                reRegister.setFlag(0);
+
+            }
+            sendMsg(ctx,reRegister);
+        }catch (NumberFormatException e){
+            System.out.println("格式转换错误");
+            e.printStackTrace();
+        }
     }
 
     /**

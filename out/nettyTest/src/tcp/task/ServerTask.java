@@ -32,85 +32,97 @@ public class ServerTask {
         try {
             String from = protocalMsg.getFrom();
             if (msgType == MsgType.REGISTER){
+                if (DeviceInfo.queryDevice(from)){
+                    //返回成功信息
+                    ServerMain.dataMap.put(from, "");
+                    replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                    logger.debug("HardwareAddress : [" + from + "] register successful!");
+                    return;
+                }else {
+//                    ctx.channel().close();
+                    //返回错误信息
+                    errorMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                    logger.error("the hardWare are not ours");
+                    return;
+                }
+            }else {
+                if (ServerMain.dataMap.containsKey(from)) {
+                    switch (msgType){
+                        case START:
+                            if (!common.isInTime(ServerMain.dataMap.get(from))){
+                                ServerMain.dataMap.put(from, common.getCurrentDate());
+                                replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                                if (DeviceInfo.saveDevice(from)){
+                                    //将消息加入临时表
+                                    logger.debug(from + " device start");
+                                }else {
+                                    errorMsg(ctx.channel(), from, protocalMsg.getMsgType());
+//                                    ctx.channel().close();
+                                }
+                            }else
+                                replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                            break;
+                        case END:
+                            if (checkDataStart(ctx.channel(),from, protocalMsg.getMsgType()) || DeviceInfo.querySleepData(from) != null){
+                                logger.debug(from + " device end from " + ServerMain.dataMap.get(from) +
+                                        " to " + common.getCurrentDate() + "\n");
+                                replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                                DeviceInfo.deleteDevice(from);
+                                ServerMain.dataMap.put(from, "");
+                            }else {
+                                errorMsg(ctx.channel(), from, protocalMsg.getMsgType());
+//                                ctx.close();
+                            }
+                            break;
+                        case DATA:
+                            if (checkDataStart(ctx.channel(),from, protocalMsg.getMsgType()) || DeviceInfo.querySleepData(from) != null){
+                                replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
+                                if (DataTask.sleepDataHandle(protocalMsg)){
+                                    logger.debug("data handling");
+                                }else {
+                                    errorMsg(ctx.channel(), from, protocalMsg.getMsgType());
+//                                    ctx.channel().close();
+                                }
+                            }else {
+                                errorMsg(ctx.channel(), from, protocalMsg.getMsgType());
+//                                ctx.close();
+                            }
+                            break;
+                        case ERROR:
+                            errorMsg(ctx.channel(), "unknow",4);
+                            logger.error("message type error");
+                            ctx.channel().close();
+                            break;
 
-            }
-//        if (ServerMain.dataMap.containsKey(from)) {
-            switch (msgType){
-                case REGISTER:
-                    if (DeviceInfo.queryDevice(from)){
-                        //返回成功信息
-                        ServerMain.dataMap.put(from, "");
-                        replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
-                        logger.debug("HardwareAddress is : " + from);
-                    }else {
-                        ctx.channel().close();
-                        //返回错误信息
-                        errorMsg(ctx.channel(), from, 122);
-                        logger.error("there are not this hardware");
-                        return;
                     }
-                    break;
-                case START:
-                    ServerMain.dataMap.put(from, common.getCurrentDate());
-//                    if (DeviceInfo.saveDevice(from)){
-                        replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
-                        logger.debug(from + " device start");
-//                    }else
-//                        errorMsg(ctx.channel(),from ,122);
-                    break;
-                case END:
-                    ServerMain.dataMap.remove(from);
-                    replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
-                    logger.debug(from + " device end");
-                    break;
-                case DATA:
-                    replyMsg(ctx.channel(), from, protocalMsg.getMsgType());
-                    logger.debug("data handling");
-//                    DataTask.sleepDataHandle(json);
-                    break;
-                case ERROR:
-                    errorMsg(ctx.channel(), "unknow",31);
-                    logger.error("message type error");
-                    ctx.channel().close();
-                    break;
 
+                }else {
+                    ctx.channel().close();
+                    logger.error("device has no register");
+                }
             }
+
         }catch (NullPointerException e){
-            errorMsg(ctx.channel(), "unknow",31);
-            logger.error("there are no this HardWare");
+            errorMsg(ctx.channel(), "unknow",4);
+            logger.error("there are no adapt msgType to HardWare");
             ctx.channel().close();
         }
 
 
-//        }else {
-//            logger.error("device has not register");
-//            ctx.channel().close();
-//        }
 
-
-
-//         if (StringUtils.startsWith(msg, "I")) {
-//                String macAddress = msg.substring(7, 19);
-//                if (DeviceInfo.queryDevice(macAddress)){
-//                    //返回成功信息
-//                    ServerMain.dataMap.put(macAddress, "");
-//                    replyMsg(ctx.channel(), macAddress);
-//                    logger.debug("HardwareAddress is : " + macAddress);
-//                }else {
-//                    ctx.channel().close();
-//                    //返回错误信息
-//                    errorMsg(ctx.channel(), macAddress, 63);
-//                    logger.error("there are not this hardware");
-//                    return;
-//                }
-//        }else {
-//            errorMsg(ctx.channel(), "unknow", 31);
-//            logger.error("there are no adapt type");
-//            ctx.channel().close();
-//        }
 
 
     }
+
+    public static boolean checkDataStart(Channel ctx, String deviceId, int msgType){
+
+
+        if (ServerMain.dataMap.get(deviceId).length() < 3) {
+            return false;
+        }
+        return true;
+    }
+
 
     public static void replyMsg(Channel ctx, String message, int msgType){
 
@@ -122,7 +134,7 @@ public class ServerTask {
 
         JSONObject j = (JSONObject) JSON.toJSON(msg);
         String data = j.toJSONString() + "\r\n";
-        logger.debug("reply message is " + data + "\n");
+        logger.debug("reply message is [" + data + "]\n");
         writeAndFlush(ctx, data);
 
     }
@@ -133,11 +145,12 @@ public class ServerTask {
         msg.setFrom("server");
         msg.setTo(message);
         msg.setFlag(0);
-        msg.setMsgType(1);
-        msg.setErrCode(errorCode);
+        msg.setMsgType(errorCode);
+        msg.setErrCode(errorCode * 100 +22);
 
         JSONObject j = (JSONObject) JSON.toJSON(msg);
         String data = j.toJSONString();
+        logger.error("handle device : + " + message  + "is error : [" + data + "]\n");
         writeAndFlush(ctx, data);
 
     }

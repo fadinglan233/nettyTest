@@ -2,8 +2,9 @@ package tcp.task;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import tcp.message.ProtocalMsg;
 import tcp.model.SleepData;
-import tcp.mysql.SleepDataSave;
+import tcp.mysql.DeviceInfo;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -16,37 +17,55 @@ public class DataTask {
     private static ArrayList<SleepData> sleepDataListClone = new ArrayList<>();
     private static ArrayList<SleepData> sleepDataList = new ArrayList<>();
 
-    public static void sleepDataHandle(JSONObject jsonObject){
+    public static boolean sleepDataHandle(ProtocalMsg protocalMsg){
 
-        saveSleepData(jsonObject);
-
-        if (sleepDataList.size() == 15){
-            sleepDataListClone =  (ArrayList<SleepData>) sleepDataList.clone();
-            sleepDataList.clear();
-            SleepDataSave.insertInDB(jsonObject.getString("from"), sleepDataListClone);
-
-        }
-
-    }
-
-    public static SleepData saveSleepData (JSONObject json){
-
-        SleepData sleepData = new SleepData();
-
-        JSONArray params = (JSONArray) json.get("params");
-        Object object = (Object)params.get(0);
+        JSONArray params = protocalMsg.getParams();
+        Object object = params.get(0);
         Map<String, JSONArray> sleepMap = (Map<String,JSONArray>) object;
-        Object[] ob = sleepMap.get("rate").toArray();
 
+        Object[] ob = sleepMap.get("rate").toArray();
         String data = "";
         for (Object o:ob) {
             data = data + o + " ";
         }
 
-        sleepData.setDeviceId((String) json.get("from"));
-        sleepData.setHeartRate(data);
-        sleepDataList.add(sleepData);
-        return sleepData;
+        String dataBefore = DeviceInfo.querySleepData(protocalMsg.getFrom())[1];
+//        if (dataBefore == null){
+//            return DeviceInfo.updateDevice(protocalMsg.getFrom(), "" + data + " ");
+//        }else
+            return DeviceInfo.updateDevice(protocalMsg.getFrom(),  data);
+
+//        SleepDataSave.insertInDB(protocalMsg.getFrom(), data);
+
+//        saveSleepData(protocalMsg);
+//
+//        if (sleepDataList.size() == 15){
+//            sleepDataListClone =  (ArrayList<SleepData>) sleepDataList.clone();
+//            sleepDataList.clear();
+//            SleepDataSave.insertInDB(protocalMsg.getFrom(), sleepDataListClone);
+//
+//        }
 
     }
+
+//    public static SleepData saveSleepData (ProtocalMsg json){
+//
+//        SleepData sleepData = new SleepData();
+//
+//        JSONArray params = json.getParams();
+//        Object object = (Object)params.get(0);
+//        Map<String, JSONArray> sleepMap = (Map<String,JSONArray>) object;
+//        Object[] ob = sleepMap.get("rate").toArray();
+//
+//        String data = "";
+//        for (Object o:ob) {
+//            data = data + o + " ";
+//        }
+//
+//        sleepData.setDeviceId(json.getFrom());
+//        sleepData.setHeartRate(data);
+//        sleepDataList.add(sleepData);
+//        return sleepData;
+//
+//    }
 }

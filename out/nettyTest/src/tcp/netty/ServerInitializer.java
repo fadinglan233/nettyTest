@@ -17,7 +17,8 @@ public class ServerInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         ByteBuf delimiter = Unpooled.copiedBuffer("\r\n".getBytes());
-        socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(4096, delimiter));
+        ByteBuf delimiter2 = Unpooled.copiedBuffer("\\r\\n".getBytes());
+        socketChannel.pipeline().addLast(new DelimiterBasedFrameDecoder(4096, delimiter,delimiter2));
         socketChannel.pipeline().addLast(new StringDecoder());
         socketChannel.pipeline().addLast(new ServerHandler());
 

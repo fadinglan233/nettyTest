@@ -62,9 +62,8 @@ public class ServerHandler extends ChannelHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
-        cause.printStackTrace();
         ctx.close();
-        logger.error("ctx close!");
+        logger.error(ctx.channel().remoteAddress() + "has closed!");
     }
 
     public String getHostValue(ChannelHandlerContext ctx){

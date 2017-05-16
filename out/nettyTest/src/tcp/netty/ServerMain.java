@@ -28,7 +28,7 @@ public class ServerMain {
 
     public static void main(String[] args) throws Exception {
         int port = 8000;
-        DataHandler dataHandler = new DataHandler(dateQueue);
+
         if (args != null && args.length > 0){
             try {
                 port = Integer.valueOf(args[0]);
@@ -38,7 +38,9 @@ public class ServerMain {
         }
 
         try {
-            new Thread(dataHandler).start();
+            DataHandler dataHandler = new DataHandler(dateQueue);
+            Thread aa = new Thread(dataHandler);
+            aa.start();
             new ServerConfig().bind(port);
         }catch (IOException e1){
             System.out.println("");

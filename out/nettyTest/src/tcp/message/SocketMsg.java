@@ -1,5 +1,7 @@
 package tcp.message;
 
+import tcp.message.impl.SocketDefaultMsg;
+
 /**
  * Created by fadinglan on 2017/5/4.
  */
@@ -17,8 +19,9 @@ public interface SocketMsg {
 
     void setMsgType(int msgType);
 
-    void setFlag(int flag);
-    int getFlag();
+    int getState();
+
+    void setState(int state);
 
     SocketMsg makeResponse();
 }

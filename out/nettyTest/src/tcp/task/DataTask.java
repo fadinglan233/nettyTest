@@ -1,8 +1,7 @@
 package tcp.task;
 
 import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import tcp.message.ProtocalMsg;
+import tcp.message.impl.SocketDefaultMsg;
 import tcp.model.SleepData;
 import tcp.mysql.DeviceInfo;
 
@@ -17,7 +16,7 @@ public class DataTask {
     private static ArrayList<SleepData> sleepDataListClone = new ArrayList<>();
     private static ArrayList<SleepData> sleepDataList = new ArrayList<>();
 
-    public static boolean sleepDataHandle(ProtocalMsg protocalMsg){
+    public static void sleepDataHandle(SocketDefaultMsg protocalMsg){
 
         JSONArray params = protocalMsg.getParams();
         Object object = params.get(0);
@@ -30,10 +29,10 @@ public class DataTask {
         }
 
         String dataBefore = DeviceInfo.querySleepData(protocalMsg.getFrom())[1];
-//        if (dataBefore == null){
-//            return DeviceInfo.updateDevice(protocalMsg.getFrom(), "" + data + " ");
-//        }else
-            return DeviceInfo.updateDevice(protocalMsg.getFrom(),  data);
+        if (dataBefore == null){
+            DeviceInfo.updateDevice(protocalMsg.getFrom(), "" + data + " ");
+        }else
+            DeviceInfo.updateDevice(protocalMsg.getFrom(),  data);
 
 //        SleepDataSave.insertInDB(protocalMsg.getFrom(), data);
 

@@ -27,6 +27,17 @@ public enum  MsgType {
     /**
      * 错误标识
      */
-    ERROR
+    ERROR,
+
+    /**
+     * 数据处理
+     */
+    HANDLER,
+
+    HEART
+
+
+
+
 
 }

@@ -122,7 +122,32 @@ public class DeviceInfo {
 
     }
 
-    public static boolean deleteDevice(String deviceId){
+    public static boolean updateDate(String deviceId , String endTime, String startTime){
+
+        Connection        con      = null;
+        PreparedStatement ps        = null;
+        ResultSet         rs        = null;
+
+        String sql = "update sleep_data set t_end_time ='" + endTime + "' WHERE vc_device_id = '" + deviceId + "' AND t_start_time = '" + startTime + "'";
+        try {
+            con = DBPool.getConnection();
+            con.setAutoCommit(false);
+            ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+            con.commit();
+            return true;
+        }catch (SQLException e){
+            logger.error("update error" , e);
+        }finally {
+            DBPool.release(con, ps, null);
+        }
+        return false;
+
+    }
+
+
+
+    public static boolean deleteDevice(String deviceId, String startTime){
 
         Connection        con      = null;
         PreparedStatement ps        = null;
@@ -130,7 +155,7 @@ public class DeviceInfo {
 
 //        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "' and t_start_time = '"
 //                + ServerMain.dataMap.get(deviceId) + "''";
-        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "'";
+        String sql = "DELETE from sleep_data where vc_device_id = '" + deviceId + "' AND t_start_time = '" + startTime + "'";
 
         try {
             con = DBPool.getConnection();

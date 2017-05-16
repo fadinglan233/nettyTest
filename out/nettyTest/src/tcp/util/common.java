@@ -1,5 +1,15 @@
 package tcp.util;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import tcp.netty.ServerMain;
+import tcp.task.ServerTask;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -8,6 +18,8 @@ import java.util.Date;
  * Created by fadinglan on 2017/5/8.
  */
 public class common {
+
+    private static final Log logger = LogFactory.getLog(common.class);
 
     public static String getCurrentDate() {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
@@ -38,7 +50,7 @@ public class common {
 
             if (args[0].equals(currents[0]))   return true;
             else {
-                if (Math.abs(maptime - nowTime) < 3600000)
+                if (Math.abs(maptime - nowTime) < 1800000)
                     return true;
                 else
                     return false;
@@ -48,5 +60,27 @@ public class common {
             throw new IllegalArgumentException("Illegal Argument arg:" + sourceTime);
         }
 
+    }
+
+    public static void replyMsg(Channel ctx, Object obj){
+        if (obj == null)    return;
+        JSONObject j = (JSONObject) JSON.toJSON(obj);
+        String data = j.toJSONString() + "\r\n";
+        logger.debug("reply message is [" + data + "]");
+        writeAndFlush(ctx, data);
+    }
+
+    // 执行写操作
+    private static void writeAndFlush (Channel ctx, String data){
+        ByteBuf byteBuf = Unpooled.copiedBuffer((data).getBytes());
+        ctx.writeAndFlush(byteBuf);
+    }
+
+    public static boolean checkDataStart(String deviceId){
+
+        if (ServerMain.dataMap.get(deviceId).length() < 3) {
+            return false;
+        }
+        return true;
     }
 }

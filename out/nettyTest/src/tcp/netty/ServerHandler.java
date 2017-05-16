@@ -26,10 +26,6 @@ public class ServerHandler extends ChannelHandlerAdapter {
             ChannelRegister.addChannel(ctx,channel);
         }
     }
-    @Override
-    public void channelReadComplete(ChannelHandlerContext ctx) {
-        ctx.flush();
-    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
@@ -43,9 +39,8 @@ public class ServerHandler extends ChannelHandlerAdapter {
             ServerMain.channelMap.remove(hostValue);
             ctx.channel().close();
         }else {
-            ServerTask.taskSubmit(ctx, (String)msg);
+            ServerTask.taskSubmit(ctx, data);
         }
-
     }
 
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
@@ -62,6 +57,7 @@ public class ServerHandler extends ChannelHandlerAdapter {
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
+        cause.printStackTrace();
         ctx.close();
         logger.error(ctx.channel().remoteAddress() + "has closed!");
     }

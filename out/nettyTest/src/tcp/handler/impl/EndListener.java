@@ -32,7 +32,7 @@ public class EndListener implements MsgListener{
 
                 responseMsg = msg.makeResponse();
                 DeviceInfo.updateDate(deviceId,common.getCurrentDate(),ServerMain.dataMap.get(deviceId));
-//                DeviceInfo.deleteDevice(deviceId, ServerMain.dataMap.get(deviceId));
+                DeviceInfo.deleteDevice(deviceId, ServerMain.dataMap.get(deviceId));
                 ServerMain.dataMap.put(deviceId, common.getCurrentDate());
                 ServerMain.idMap.remove(deviceId);
                 }else {

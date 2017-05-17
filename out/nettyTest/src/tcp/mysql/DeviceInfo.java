@@ -22,6 +22,7 @@ public class DeviceInfo {
         Connection        con      = null;
         PreparedStatement ps        = null;
         ResultSet         rs        = null;
+        String[] result = new String[2];
 
         String sql = "select * from device_info where vc_device_id = '" + deviceId + "'";
 
@@ -32,8 +33,10 @@ public class DeviceInfo {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             con.commit();
-            if (rs.next())
+            if (rs.next()){
                 return true;
+            }
+
         }catch (SQLException e){
             logger.error("check device sql error" , e);
         }finally {
@@ -48,7 +51,7 @@ public class DeviceInfo {
         PreparedStatement ps        = null;
         ResultSet         rs        = null;
 
-        String[] sleepData = new String[2];
+        String[] sleepData = new String[3];
 
         String sql = "select * from sleep_data where vc_device_id = '" + deviceId + "'";
 
@@ -62,6 +65,7 @@ public class DeviceInfo {
             if (rs.next()){
                 sleepData[0] = rs.getString("t_start_time");
                 sleepData[1] = rs.getString("mt_heart_rate");
+                sleepData[2] = rs.getString("t_end_time");
                 return sleepData;
             }
 

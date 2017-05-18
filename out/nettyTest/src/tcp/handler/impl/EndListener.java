@@ -31,10 +31,12 @@ public class EndListener implements MsgListener{
                         " to " + common.getCurrentDate() + "\n");
 
                 responseMsg = msg.makeResponse();
+                common.replyMsg(ctx, responseMsg);
                 DeviceInfo.updateDate(deviceId,common.getCurrentDate(),ServerMain.dataMap.get(deviceId));
-                DeviceInfo.deleteDevice(deviceId, ServerMain.dataMap.get(deviceId));
+//                DeviceInfo.deleteDevice(deviceId, ServerMain.dataMap.get(deviceId));
                 ServerMain.dataMap.put(deviceId, common.getCurrentDate());
                 ServerMain.idMap.remove(deviceId);
+                return;
                 }else {
                     responseMsg = msg.errorResponse();
                     logger.error(deviceId + "END ERROR cause has not start");

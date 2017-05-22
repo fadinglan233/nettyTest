@@ -1,6 +1,7 @@
 package tcp.task;
 
 import com.alibaba.fastjson.JSONArray;
+import tcp.message.SocketMsg;
 import tcp.message.impl.SocketDefaultMsg;
 import tcp.mysql.DeviceInfo;
 import tcp.netty.ServerMain;
@@ -13,9 +14,9 @@ import java.util.concurrent.BlockingQueue;
  */
 public class DataHandler implements Runnable {
 
-    private final BlockingQueue<SocketDefaultMsg> blockingQueue;
+    private final BlockingQueue<SocketMsg> blockingQueue;
 
-    public DataHandler(BlockingQueue<SocketDefaultMsg> blockingQueue) {
+    public DataHandler(BlockingQueue<SocketMsg> blockingQueue) {
         this.blockingQueue = blockingQueue;
     }
 
@@ -26,7 +27,7 @@ public class DataHandler implements Runnable {
         while (true){
 
              if (blockingQueue != null && !blockingQueue.isEmpty()){
-                SocketDefaultMsg msg = ServerMain.dateQueue.poll();
+                 SocketMsg msg = ServerMain.dateQueue.poll();
                 JSONArray params = msg.getParams();
                 Object object = params.get(0);
                 Map<String, JSONArray> sleepMap = (Map<String,JSONArray>) object;
@@ -38,14 +39,14 @@ public class DataHandler implements Runnable {
                     for (Object o:ob) {
                         data = data + o + " ";
                     }
-                    String dataBefore = "";
-                    if(DeviceInfo.querySleepData(msg.getFrom())[1] != null){
-                        dataBefore = DeviceInfo.querySleepData(msg.getFrom())[1];
-                    }
+//                    String dataBefore = "";
+//                    if(DeviceInfo.querySleepData(msg.getFrom())[1] != null){
+//                        dataBefore = DeviceInfo.querySleepData(msg.getFrom())[1];
+//                    }
+//
+////                    System.out.println("update device is : " + msg.getFrom() + "sleepData is : " + dataBefore + data);
 
-//                    System.out.println("update device is : " + msg.getFrom() + "sleepData is : " + dataBefore + data);
-
-                    DeviceInfo.updateDevice(msg.getFrom(),  dataBefore + data);
+                    DeviceInfo.updateDevice(msg.getFrom(),   data);
                 }catch (ClassCastException e){
                     System.err.println("rate type error");
                 }

@@ -2,6 +2,7 @@ package tcp.handler.impl;
 
 import io.netty.channel.Channel;
 import tcp.handler.MsgListener;
+import tcp.message.SocketMsg;
 import tcp.message.impl.SocketDefaultMsg;
 import tcp.util.common;
 
@@ -11,7 +12,7 @@ import tcp.util.common;
 public class HeartListener implements MsgListener {
 
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         common.replyMsg(ctx,msg.makeResponse());
     }

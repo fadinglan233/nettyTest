@@ -1,5 +1,6 @@
 package tcp.message;
 
+import com.alibaba.fastjson.JSONArray;
 import tcp.message.impl.SocketDefaultMsg;
 
 /**
@@ -23,5 +24,14 @@ public interface SocketMsg {
 
     void setState(int state);
 
+    int getMsgID();
+
+    void setMsgID(int msgID);
+
+    JSONArray getParams();
+
+    void setParams(JSONArray params);
     SocketMsg makeResponse();
+    SocketMsg errorResponse();
+    SocketMsg pinMsg();
 }

@@ -23,7 +23,7 @@ public class StartListener implements MsgListener {
     private static final Log logger = LogFactory.getLog(StartListener.class);
 
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         String deviceId = msg.getFrom();
         SocketMsg response;

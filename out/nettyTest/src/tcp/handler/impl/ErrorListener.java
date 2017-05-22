@@ -12,7 +12,7 @@ import tcp.util.common;
  */
 public class ErrorListener implements MsgListener {
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         common.replyMsg(ctx,new SocketDefaultMsg().errorResponse());
 //        errorMsg(ctx.channel(), "unknow",4);

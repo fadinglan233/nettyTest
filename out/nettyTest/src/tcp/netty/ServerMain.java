@@ -1,6 +1,7 @@
 package tcp.netty;
 
 import io.netty.channel.Channel;
+import tcp.message.SocketMsg;
 import tcp.message.impl.SocketDefaultMsg;
 import tcp.task.DataHandler;
 import tcp.task.TimerTask;
@@ -21,7 +22,7 @@ public class ServerMain {
     //线程安全map，处理服务器hold住客户端连接的channel
     public static ConcurrentHashMap<String, Channel> channelMap = new ConcurrentHashMap<>();
 
-    public static BlockingQueue<SocketDefaultMsg> dateQueue = new LinkedBlockingDeque<>(100);
+    public static BlockingQueue<SocketMsg> dateQueue = new LinkedBlockingDeque<>(100);
 
     public static List<Integer> idList = new ArrayList<>();
     //线程安全map，存储传输数据开始的时间

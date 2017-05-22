@@ -5,6 +5,7 @@ import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import tcp.exception.SocketException;
 import tcp.register.ChannelRegister;
 import tcp.task.ServerTask;
 
@@ -28,7 +29,7 @@ public class ServerHandler extends ChannelHandlerAdapter {
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws SocketException {
 
         String hostValue = getHostValue(ctx);
         String data = (String)msg;

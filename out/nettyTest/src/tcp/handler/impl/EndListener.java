@@ -20,7 +20,7 @@ public class EndListener implements MsgListener{
 
     private static final Log logger = LogFactory.getLog(EndListener.class);
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         SocketMsg responseMsg = null;
         try {

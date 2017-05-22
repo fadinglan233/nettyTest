@@ -1,5 +1,6 @@
 package tcp.message.impl;
 
+import com.alibaba.fastjson.JSONArray;
 import tcp.message.SocketMsg;
 
 /**
@@ -14,6 +15,16 @@ public class DefaultResponse implements SocketMsg {
     private int state = 1;
 
     public SocketMsg makeResponse (){
+        return null;
+    }
+
+    @Override
+    public SocketMsg errorResponse() {
+        return null;
+    }
+
+    @Override
+    public SocketMsg pinMsg() {
         return null;
     }
 
@@ -65,5 +76,25 @@ public class DefaultResponse implements SocketMsg {
     @Override
     public void setState(int state) {
         this.state = state;
+    }
+
+    @Override
+    public int getMsgID() {
+        return 0;
+    }
+
+    @Override
+    public void setMsgID(int msgID) {
+
+    }
+
+    @Override
+    public JSONArray getParams() {
+        return null;
+    }
+
+    @Override
+    public void setParams(JSONArray params) {
+
     }
 }

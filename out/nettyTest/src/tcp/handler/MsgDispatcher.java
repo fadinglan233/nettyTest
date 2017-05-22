@@ -23,7 +23,7 @@ public interface MsgDispatcher {
      * 消息分发
      * @param msg
      */
-    public void fireMsg(Channel ctx, SocketDefaultMsg msg, MsgType msgType);
+    public void fireMsg(Channel ctx, SocketMsg msg, MsgType msgType);
 
     /**
      * 移除事件

@@ -1,5 +1,6 @@
 package tcp.message.impl;
 
+import com.alibaba.fastjson.JSONArray;
 import tcp.message.SocketMsg;
 
 /**
@@ -53,7 +54,37 @@ public class PinMsg implements SocketMsg {
     }
 
     @Override
+    public int getMsgID() {
+        return 0;
+    }
+
+    @Override
+    public void setMsgID(int msgID) {
+
+    }
+
+    @Override
+    public JSONArray getParams() {
+        return null;
+    }
+
+    @Override
+    public void setParams(JSONArray params) {
+
+    }
+
+    @Override
     public SocketMsg makeResponse() {
+        return null;
+    }
+
+    @Override
+    public SocketMsg errorResponse() {
+        return null;
+    }
+
+    @Override
+    public SocketMsg pinMsg() {
         return null;
     }
 }

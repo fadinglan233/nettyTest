@@ -22,7 +22,7 @@ public class DataListener implements MsgListener {
 
     private static final Log logger = LogFactory.getLog(DataListener.class);
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         try {
             String deviceId = msg.getFrom();

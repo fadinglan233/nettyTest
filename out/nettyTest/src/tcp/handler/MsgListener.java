@@ -10,5 +10,5 @@ import tcp.message.impl.SocketDefaultMsg;
  */
 public interface MsgListener {
 
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg);
+    public void handlerMsg(Channel ctx, SocketMsg msg);
 }

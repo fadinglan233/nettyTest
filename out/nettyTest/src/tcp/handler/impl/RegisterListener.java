@@ -20,7 +20,7 @@ public class RegisterListener implements MsgListener {
     private static final Log logger = LogFactory.getLog(RegisterListener.class);
 
     @Override
-    public void handlerMsg(Channel ctx, SocketDefaultMsg msg) {
+    public void handlerMsg(Channel ctx, SocketMsg msg) {
 
         String from = msg.getFrom();
         SocketMsg response;

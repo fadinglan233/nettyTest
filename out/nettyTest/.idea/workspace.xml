@@ -6,104 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76cd7475-e23d-4c6f-8690-3fb2a6cf0e02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__com_alibaba_fastjson_1_2_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__io_netty_netty_all_4_1_9_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../SocketServer/.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/controller.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../controller/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javatest/src/netty/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javatest/src/ss.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javatest/src/thread/DigestThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javatest/src/thread/threadTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/socketserver.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/SocketConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/SocketServer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/SocketController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/SocketControllers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/SocketControllersGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/impl/SocketDebugRegisterControllerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/impl/SocketEchoControllerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/impl/SocketHeartbeatControllerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/impl/SocketMsgForwardingControllerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/controller/impl/SocketUnconditionalRegisterControllerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/event/SocketEventListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/event/SocketEventListenersGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/event/SocketEventsType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/SocketException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/fatal/SocketFatalException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/fatal/SocketInvalidSourceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/fatal/SocketKeepWordsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/fatal/SocketProtocolBrokenException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/fatal/SocketProtocolUnsupportedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/normal/SocketInvalidTargetException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/normal/SocketNormalException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/exception/normal/SocketPermissionDeniedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/SocketIOBooter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/SocketIOTerm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/netty/SocketNettyBooterImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/netty/SocketTCPHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/netty/SocketTCPInitializer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/term/SocketBaseIOTerm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/io/term/SocketDefaultIOTerm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/protocol/SocketMsg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/protocol/SocketProtocolFamily.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/protocol/SocketProtocolParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/protocol/msg/SocketDefaultMsg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/protocol/msg/SocketDefaultProtocolParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/SocketRouting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/SocketRoutingItemMap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/item/SocketRoutingDebugItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/item/SocketRoutingFormalItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/item/SocketRoutingItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/routing/item/SocketRoutingTmpItem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/schedule/SocketHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/schedule/SocketScheduler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/delegate/SocketSecureDelegate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/delegate/SocketSecureDelegateType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/delegate/SocketSecureDelegatesGroup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/SocketSecureStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketBaseSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketContainsSourceSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketContainsTargetSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketFakeSourceSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketSendPermissionSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketSourceKeepWordsSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/secure/strategy/impl/SocketTargetKeepWordsSecureStrategyImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/util/SocketLogUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/socket/util/SocketPriority.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/spring.socket.secure.strategy.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../socketserver/src/spring.socket.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../nettyTest/.idea/libraries/mysql_connector_java_5_1_39_bin.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/nettyTest_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/nettyTest_jar.xml" />
+    <list default="true" id="76cd7475-e23d-4c6f-8690-3fb2a6cf0e02" name="Default" comment="V1.0（修改）">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/MsgDispatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/MsgListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/CommonMsgDispatcher.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/ErrorListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/HeartListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/ListenerFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/StartListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/message/impl/DefaultResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/message/impl/ErrorResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/message/impl/MsgResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/message/impl/PinMsg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/message/impl/SocketDefaultMsg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tcp/task/DataHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/netty.log" afterPath="$PROJECT_DIR$/log/netty.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/netty_err.log" afterPath="$PROJECT_DIR$/log/netty_err.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java" afterPath="$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tcp/netty/ServerMain.java" afterPath="$PROJECT_DIR$/src/tcp/netty/ServerMain.java" />
     </list>
     <ignored path="nettyTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,9 +67,11 @@
       <file leaf-file-name="StartListener.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/StartListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="164">
+              <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,57 +79,23 @@
       <file leaf-file-name="ServerTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tcp/task/ServerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="495">
               <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServerHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/mysql/DeviceInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
               <folding>
-                <marker date="1494988702000" expanded="true" signature="657:722" ph="select * fro... device_info" />
-                <marker date="1494988702000" expanded="true" signature="1445:1509" ph="select t_sta... sleep_data" />
-                <marker date="1494988702000" expanded="true" signature="2323:2385" ph="insert into device... " />
-                <marker date="1494988702000" expanded="true" signature="3120:3216" ph="update sleep... " />
-                <marker date="1494988702000" expanded="true" signature="3867:3997" ph="update sleep... " />
-                <marker date="1494988702000" expanded="true" signature="4804:4905" ph="DELETE from " />
-                <marker date="1494988702000" expanded="true" signature="4900:4905" ph="DELETE from " />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerMain.java">
+      <file leaf-file-name="TimerTask.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/task/TimerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,29 +103,35 @@
       <file leaf-file-name="RegisterListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="405">
+              <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonMsgDispatcher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/CommonMsgDispatcher.java">
+      <file leaf-file-name="ListenerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/ListenerFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EndListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java">
+      <file leaf-file-name="HeartListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/HeartListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="105">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -248,7 +141,47 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tcp/task/DataHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#455#456#0" expanded="false" />
+                <element signature="e#505#506#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -288,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/Message/BaseMessage/MsgType.java" />
         <option value="$PROJECT_DIR$/src/com/Message/Reply/ReplyClientBody.java" />
         <option value="$PROJECT_DIR$/src/com/Server/NettyServerHandler.java" />
         <option value="$PROJECT_DIR$/src/com/Server/NettyServerBootstrap.java" />
@@ -335,10 +267,11 @@
         <option value="$PROJECT_DIR$/src/tcp/task/ServerTask.java" />
         <option value="$PROJECT_DIR$/src/tcp/mysql/DeviceInfo.java" />
         <option value="$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java" />
-        <option value="$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java" />
-        <option value="$PROJECT_DIR$/src/tcp/handler/impl/StartListener.java" />
         <option value="$PROJECT_DIR$/src/tcp/netty/ServerMain.java" />
         <option value="$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java" />
+        <option value="$PROJECT_DIR$/src/tcp/handler/impl/StartListener.java" />
+        <option value="$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java" />
+        <option value="$PROJECT_DIR$/src/tcp/task/DataHandler.java" />
       </list>
     </option>
   </component>
@@ -352,7 +285,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="-43" />
+    <option name="y" value="52" />
     <option name="width" value="1280" />
     <option name="height" value="773" />
   </component>
@@ -374,7 +308,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -573,6 +508,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tcp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="handler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -603,10 +564,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nettyTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1248,7 +1226,9 @@
       <workItem from="1494294244174" duration="11757000" />
       <workItem from="1494312348788" duration="8259000" />
       <workItem from="1494380989508" duration="9119000" />
-      <workItem from="1494905447769" duration="13040000" />
+      <workItem from="1494905447769" duration="17443000" />
+      <workItem from="1495258956315" duration="648000" />
+      <workItem from="1495415409925" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="register list">
       <created>1482388185511</created>
@@ -1327,11 +1307,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494989593872</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="V1.0（修改）">
+      <created>1495087061215</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1495087061215</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371210000" />
+    <option name="totallyTimeSpent" value="377305000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1343,25 +1330,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="-43" y="52" width="1280" height="773" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37591776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66226137" sideWeight="0.509693" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4331865" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1483113" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2041116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24071082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24878837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1373,6 +1358,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37591776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1437,7 +1423,8 @@
     <MESSAGE value="修改协议V1.3  添加心跳回复，查询ping值，在线|离线传输" />
     <MESSAGE value="修复bug" />
     <MESSAGE value="V1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="V1.0" />
+    <MESSAGE value="V1.0（修改）" />
+    <option name="LAST_COMMIT_MESSAGE" value="V1.0（修改）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1465,10 +1452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="1004" column="13" lean-forward="false" selection-start-line="1004" selection-start-column="13" selection-end-line="1004" selection-end-column="13" />
-          <folding>
-            <element signature="e#44347#44348#0" expanded="false" />
-            <element signature="e#44395#44396#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1508,46 +1491,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/message/ProtocalMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/message/ProtocalMsg.java" />
     <entry file="file://$PROJECT_DIR$/src/tcp/message/MsgType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/message/ErrorMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="51" column="5" lean-forward="false" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/message/SocketDefaultMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/message/ErrorMsg.java" />
+    <entry file="file://$PROJECT_DIR$/src/tcp/message/SocketDefaultMsg.java" />
     <entry file="file://$PROJECT_DIR$/src/tcp/model/SleepData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1562,7 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1577,7 +1536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,9 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1602,7 +1557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,7 +1564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="54" column="25" lean-forward="false" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1618,7 +1571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1626,7 +1578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1634,7 +1585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1642,44 +1592,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="77" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="77" />
-          <folding>
-            <marker date="1494295337000" expanded="true" signature="1200:1264" ph="select * fro... sleep_data" />
-            <marker date="1494295337000" expanded="true" signature="2659:2735" ph="insert into sleep_data... " />
-            <marker date="1494295337000" expanded="true" signature="3947:3997" ph="update sleep... " />
-            <marker date="1494295337000" expanded="true" signature="3947:4022" ph="update sleep... " />
-            <marker date="1494295337000" expanded="true" signature="3947:4038" ph="update sleep... " />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/message/MsgResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/tcp/message/MsgResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/tcp/message/impl/SocketDefaultMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="173">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/MsgDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/MsgListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/CommonMsgDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/mysql/DeviceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tcp/task/DataTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="221">
           <caret line="34" column="64" lean-forward="false" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/message/impl/SocketDefaultMsg.java">
+    <entry file="file://$PROJECT_DIR$/src/tcp/task/ServerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="495">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tcp/task/TimerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="360">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/ListenerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1690,39 +1716,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/ListenerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/MsgDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/MsgListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/task/DataHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1730,87 +1726,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/CommonMsgDispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/task/ServerTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/RegisterListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/mysql/DeviceInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="78" column="52" lean-forward="true" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
           <folding>
-            <marker date="1494988702000" expanded="true" signature="657:722" ph="select * fro... device_info" />
-            <marker date="1494988702000" expanded="true" signature="1445:1509" ph="select t_sta... sleep_data" />
-            <marker date="1494988702000" expanded="true" signature="2323:2385" ph="insert into device... " />
-            <marker date="1494988702000" expanded="true" signature="3120:3216" ph="update sleep... " />
-            <marker date="1494988702000" expanded="true" signature="3867:3997" ph="update sleep... " />
-            <marker date="1494988702000" expanded="true" signature="4804:4905" ph="DELETE from " />
-            <marker date="1494988702000" expanded="true" signature="4900:4905" ph="DELETE from " />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/DataListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="40" column="50" lean-forward="false" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/netty/ServerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/EndListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tcp/handler/impl/StartListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="164">
+          <caret line="27" column="40" lean-forward="true" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tcp/task/DataHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="45" column="33" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#455#456#0" expanded="false" />
+            <element signature="e#505#506#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
